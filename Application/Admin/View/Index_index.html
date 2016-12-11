@@ -22,24 +22,24 @@
         <th>是否展示内容</th>
         <th>操作</th>
     </tr>
-    <tr>
         <php>$index=1;</php>
         <volist name="hotspots" id="hotspot">
-            <td>{$index++}</td>
-            <td>{$hotspot.title}</td>
-            <td>{$hotspot.x}</td>
-            <td>{$hotspot.y}</td>
-            <td>{$hotspot.pos}</td>
-            <td>{$hotspot.arrow}</td>
-            <td>{$hotspot.content}</td>
-            <td>{$hotspot.show_title}</td>
-            <td>{$hotspot.show_content}</td>
-            <td>
-                <a href="{:U('admin/index/edit', array('Id' => $hotspot['Id']))}" class="btn btn-primary btn-sm">修改</a>
-                <a href="{:U('admin/index/delete', array('Id' => $hotspot['Id']))}" class="btn btn-danger btn-sm">删除</a>
-            </td>
+            <tr>
+                <td>{$index++}</td>
+                <td>{$hotspot.title}</td>
+                <td>{$hotspot.x}</td>
+                <td>{$hotspot.y}</td>
+                <td>{$hotspot.pos}</td>
+                <td>{$hotspot.arrow}</td>
+                <td>{$hotspot.content}</td>
+                <td>{$hotspot.show_title}</td>
+                <td>{$hotspot.show_content}</td>
+                <td>
+                    <a href="{:U('admin/index/edit', array('Id' => $hotspot['Id']))}" class="btn btn-primary btn-sm">修改</a>
+                    <a href="{:U('admin/index/delete', array('Id' => $hotspot['Id']))}" class="btn btn-danger btn-sm">删除</a>
+                </td>
+            </tr>
         </volist>
-    </tr>
 </table>
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
