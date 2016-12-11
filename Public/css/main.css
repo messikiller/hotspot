@@ -1,0 +1,181 @@
+//**body {
+	background:#ececec url('../gfx/bg.gif') no-repeat center top;
+	font: 10px Arial;
+	color:#828282;
+}**/
+
+h1 {
+	font-size: 28px;
+	margin-bottom: 10px;
+	color:#444;
+}
+
+h1 span {
+	color:#ffc600;
+}
+
+a {
+	color:#444;
+}
+
+strong {
+	color:#525252;
+}
+
+#menu a, #publicMethods a {
+	padding: 1px 10px;
+	text-decoration:none;
+	color:#fff;
+	background: #00C6FF;
+}
+
+#menu a:hover {
+	text-decoration:none;
+	color:#00C6FF;
+	background: #fff;
+}
+
+a img {
+	border:none;
+}
+
+hr {
+	display:block;
+	border:none;
+    height:1px;
+	margin:20px 0 50px;
+	background-image:url('../gfx/hr.gif');
+}
+
+pre {
+    background:url('../gfx/preBg.gif');
+    line-height:19px;
+    margin:0 0 15px 0;
+    padding:0 4px;
+	color:#232323;
+	font-size:11px;
+}
+
+pre span {
+	color:#ff0000;
+	font-size:14px;
+}
+
+pre span.comment {
+	color:#787878;
+	font-size:14px;
+}
+
+.floatClr {
+	clear:both;
+}
+
+/*#wrapper {
+	width:960px;
+	margin:125px auto 100px;
+}*/
+
+#header a{
+	padding:6px 55px;
+}
+
+ul {
+	list-style: none;
+	padding:0;
+}
+
+ul li {
+	list-style:none;
+	float:left;
+	margin:0 1px 1px 0;
+}
+
+.sample {
+	position:relative;
+}
+
+#myDiv {
+	/*width:960px;*/
+	height:600px;
+	overflow:hidden;
+	/*border:solid 1px #a6a6a6;*/
+	background:#000;
+}
+
+#resizeIco {
+	display:block;
+	float:right;
+	position:absolute;
+	top:732px;
+	right:-53px;
+}
+
+#publicMethods li {
+	margin-bottom:5px;
+	float:none;
+}
+
+#publicMethods a {
+	font-size: 11px;
+	text-decoration: underline;
+	color:#fff;
+	background: #222;
+}
+
+#publicMethods a:hover {
+	text-decoration:none;
+	color:#222;
+	background: #fff;
+}
+
+#galleryThumbImg {
+	width:960px;
+	margin:3px auto;
+}
+
+#galleryThumbImg img,
+.group1 img {
+	cursor:pointer;
+	border:1px solid #232323;
+	margin-right:1px;
+}
+
+/*markers*/
+.lhp_giv_marker {
+	text-align:center;
+}
+.label {
+	font-family:Arial;
+	color:#d8d8d8;
+	font-size:10px;
+	background-image:url('../gfx/markerBg.png');
+	padding:5px 10px;
+	border-radius:5px;
+}
+.label2 {
+	padding:2px 4px;
+}
+.label span{
+	color:#00c6ff;
+}
+.content {
+	font-family:Arial;
+	color:#d8d8d8;
+	font-size:10px;
+	background-image:url('../gfx/markerBg.png');
+	border:solid 1px #282828;
+	width:230px;
+	padding:5px 8px;
+	margin:10px;
+	border-radius:8px;
+	box-shadow:1px 1px 2px 2px #222;
+}
+.content span{
+	color:#00c6ff;
+	font-size:18px;
+}
+.content img{
+	float:left;
+	margin:2px 6px 0 0;
+	border:solid 1px #282828;
+}
