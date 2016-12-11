@@ -26,14 +26,14 @@
 
             <volist name="hotspots" id="hotspot">
 
-                <div class="lhp_giv_hotspot" data-x="{$hotspot.x}" data-y="{$hotspot.y}" data-visible-scale="0">
+                <div class="lhp_giv_hotspot" data-x="{$hotspot.x}" data-y="{$hotspot.y}" data-visible-scale=".{$hotspot.scale}">
                     <div class="lhp_giv_marker pos-{$hotspot.pos}">
                         <div class="label">{$hotspot.title}</div>
                         <img src="__PUBLIC__/gfx/arrow{$hotspot.arrow}.png" />
                     </div>
 
                     <if condition="($hotspot.show_title eq 1) OR ($hotspot.show_content eq 1)">
-                        <div class="lhp_giv_popup pos-{$hotspot.pos}">
+                        <div class="lhp_giv_popup pos-{$hotspot.detail_pos}">
                             <div class="content" style="width:300px;">
 
                                 <if condition="$hotspot.show_title eq 1">

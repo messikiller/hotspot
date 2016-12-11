@@ -30,6 +30,8 @@ class IndexController extends Controller
         $data['x']            = I('post.x');
         $data['y']            = I('post.y');
         $data['pos']          = I('post.pos');
+        $data['detail_pos']   = I('post.detail_pos');
+        $data['scale']        = I('post.scale');
         $data['arrow']        = I('post.arrow');
         $data['content']      = I('post.content');
         $data['show_title']   = I('post.show_title');
@@ -66,6 +68,8 @@ class IndexController extends Controller
         $data['x']            = I('post.x');
         $data['y']            = I('post.y');
         $data['pos']          = I('post.pos');
+        $data['detail_pos']   = I('post.detail_pos');
+        $data['scale']        = I('post.scale');
         $data['arrow']        = I('post.arrow');
         $data['content']      = I('post.content');
         $data['show_title']   = I('post.show_title');

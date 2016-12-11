@@ -37,12 +37,27 @@
             </div>
 
             <div class="form-group">
+                <label for="y">标签层级：</label>
+                <input type="text" class="form-control" id="input-scale" name="scale" value="{$hotspot.scale}" />
+            </div>
+
+            <div class="form-group">
                 <label for="arrow">箭头类型：</label>
                 <select class="form-control" id="input-arrow" name="arrow">
                     <option value="1" <if condition="$hotspot.arrow eq 1">selected="selected"</if>>1</option>
                     <option value="2" <if condition="$hotspot.arrow eq 2">selected="selected"</if>>2</option>
                     <option value="3" <if condition="$hotspot.arrow eq 3">selected="selected"</if>>3</option>
                     <option value="4" <if condition="$hotspot.arrow eq 4">selected="selected"</if>>4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="detail_pos">弹出框位置：</label>
+                <select class="form-control" id="input-detail_pos" name="detail_pos">
+                    <option value="BR" <if condition="$hotspot.pos eq 'BR'">selected="selected"</if>>BR</option>
+                    <option value="BL" <if condition="$hotspot.pos eq 'BL'">selected="selected"</if>>BL</option>
+                    <option value="R" <if condition="$hotspot.pos eq 'R'">selected="selected"</if>>R</option>
+                    <option value="L" <if condition="$hotspot.pos eq 'L'">selected="selected"</if>>L</option>
                 </select>
             </div>
 
