@@ -106,14 +106,13 @@
 
         $('#search-btn').click(function(){
             var input = $.trim($('#search-input').val());
-            var pattern = new RegExp('。*'+input+'.*');
+            var pattern = new RegExp('.*'+input+'.*');
             if (input.length == 0) {
                 return false;
             } else {
                 $('.lhp_giv_hotspot .label').each(function(){
                     var label_val = $.trim($(this).text());
-                    var content_val = $.trim($(this).parent().parent('.lhp_giv_hotspot').next('.lhp_giv_popup').children('.content').first().text());
-                    if (pattern.test(label_val) || pattern.test(content_val)) {
+                    if (pattern.test(label_val)) {
                         $(this).show().parent().parent().show();
                         $(this).trigger('mousedown');
                         return false;
