@@ -114,6 +114,7 @@
                 $('.lhp_giv_hotspot .label').each(function(){
                     var label_val = $.trim($(this).text());
                     if (pattern.test(label_val)) {
+                        $(this).show().parent().parent().show();
                         $(this).trigger('mousedown');
                         return false;
                     }
