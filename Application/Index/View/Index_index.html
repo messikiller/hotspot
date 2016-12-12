@@ -12,8 +12,31 @@
 <!-- lhpGigaImgViewer plugin css -->
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/lhp_giv.css" />
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css" />
+<style>
+#search{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+}
+
+#search-container{
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 15px;
+    float: right;
+}
+</style>
 </head>
 <body>
+
+    <div id="search">
+        <div id="search-container">
+            <input type="text" id="search-input" value="" />
+            <button type="button" id="search-btn">search</button>
+        </div>
+    </div>
 
 		<div id="wrapper">
 			<div class="sample">
@@ -80,6 +103,22 @@
         locate();
         $(window).resize(function(){
             locate();
+        });
+
+        $('#search-btn').click(function(){
+            var input = $.trim($('#search-input').val());
+            var pattern = new RegExp('^'+input+'.*');
+            if (input.length == 0) {
+                return false;
+            } else {
+                $('.lhp_giv_hotspot .label').each(function(){
+                    var label_val = $.trim($(this).text());
+                    if (pattern.test(label_val)) {
+                        alert('存在标题为'+label_val+'的触点！')
+                        return false;
+                    }
+                });
+            }
         });
     })
 </script>
