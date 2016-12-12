@@ -25,7 +25,6 @@
     text-align: center;
     display: inline-block;
     padding: 20px 15px;
-    float: right;
 }
 </style>
 </head>
@@ -34,7 +33,7 @@
     <div id="search">
         <div id="search-container">
             <input type="text" id="search-input" value="" />
-            <button type="button" id="search-btn">search</button>
+            <button type="button" id="search-btn">搜索</button>
         </div>
     </div>
 
@@ -107,13 +106,14 @@
 
         $('#search-btn').click(function(){
             var input = $.trim($('#search-input').val());
-            var pattern = new RegExp('^'+input+'.*');
+            var pattern = new RegExp('。*'+input+'.*');
             if (input.length == 0) {
                 return false;
             } else {
                 $('.lhp_giv_hotspot .label').each(function(){
                     var label_val = $.trim($(this).text());
-                    if (pattern.test(label_val)) {
+                    var content_val = $.trim($(this).parent().parent('.lhp_giv_hotspot').next('.lhp_giv_popup').children('.content').first().text());
+                    if (pattern.test(label_val) || pattern.test(content_val)) {
                         $(this).show().parent().parent().show();
                         $(this).trigger('mousedown');
                         return false;
