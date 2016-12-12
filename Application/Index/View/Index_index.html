@@ -114,7 +114,7 @@
                 $('.lhp_giv_hotspot .label').each(function(){
                     var label_val = $.trim($(this).text());
                     if (pattern.test(label_val)) {
-                        alert('存在标题为'+label_val+'的触点！')
+                        $(this).trigger('mousedown');
                         return false;
                     }
                 });

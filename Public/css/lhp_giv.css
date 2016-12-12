@@ -52,17 +52,17 @@
 }
 
 .lhp_giv_nav ul li {
-	position:relative; 
-	padding:4px 0; 
-	cursor:pointer; 
-	float:left; 
+	position:relative;
+	padding:4px 0;
+	cursor:pointer;
+	float:left;
 	list-style:none;
 	margin-right:1px;
 	margin-bottom:1px;
 }
 
 .lhp_giv_nav ul li span {
-	float:left; 
+	float:left;
 	margin:0 4px;
 }
 
@@ -164,7 +164,7 @@ ul li.lhp_giv_nav_btt_disab {
 	z-index:3;
 	width:33px;
 	height:33px;
-	background: #fff url('lhp_giv/ajax-loader.gif') no-repeat center;
+	background: #fff url('../lhp_giv/ajax-loader.gif') no-repeat center;
 	opacity: .5;
 	border-radius: 17px;
 }
@@ -245,5 +245,5 @@ ul li.lhp_giv_nav_btt_disab {
 	top:14px;
 	cursor:pointer;
 	border-radius:5px;
-	background: #00c6ff url('lhp_giv/popupClose.png') no-repeat center;
+	background: #00c6ff url('../lhp_giv/popupClose.png') no-repeat center;
 }
